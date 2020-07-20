@@ -9,6 +9,10 @@ class App extends Component {
     todayMenu: ''
   };
 
+  componentDidMount() {
+    document.title = '점심 뭐먹지';
+  }
+
   chooseMenu = () => {
     let i = Math.floor(Math.random() * this.state.menus.length);
     this.setState({
